@@ -1,0 +1,42 @@
+body {
+    margin: auto;
+}
+main {
+    height: 680px;
+}
+header {
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 40px;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 250px;
+    height: 250px;  
+    margin: 40px;
+}
+.product:hover {
+    opacity: 70%;
+}
+.product-name {
+    text-align: center;
+    margin-top: -40px;
+}
+.price {
+    text-align: center;
+    margin-top: 0;
+}
+.total {
+    text-align: end;
+    margin-right: 270px;
+    padding-top: 40px;
+}
+footer {
+    text-align: center;
+    background-color: gray;
+    color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment02</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>My Cart</header>
+        <div class="row">
+            <div class="product" id="product1">
+                <img src="bangle.jpg" alt="bangle">
+                <p class="product-name">Bangle Diamond</p>
+                <p class="price">$580</p>
+            </div>
+            <div class="product" id="product2">
+                <img src="nakelace.jpg" alt="nakelace">
+                <p class="product-name">Nakelace Diamond</p>
+                <p class="price">$710</p>
+            </div>
+            <div class="product" id="product3">
+                <img src="earrings.jpg" alt="earrings">
+                <p class="product-name">Earings Diamond</p>
+                <p class="price">$330</p>
+            </div>
+        </div>
+        <div class="total">
+            <p><strong>Cart Subtotal: </strong>$<span id="total">0</span></p>
+        </div>
+    </main>
+    <footer>Tina Rahmani</footer>
+    <script>
+        //when user click on a product shows the subtotal.
+        document.querySelector("#product1").onclick = function () {
+            let total = document.querySelector("#total").textContent;
+            total = parseInt(total);
+            //by clicking on a pruduct every time the Subtotal will increase the price (+)
+            total += 580;
+            console.log(total);
+            //display total in Cart Subtotal.
+            document.querySelector("#total").textContent = total;
+        }
+        //when user click on a product shows the subtotal.
+        document.querySelector("#product2").onclick = function () {
+            let total = document.querySelector("#total").textContent;
+            total = parseInt(total);
+            //by clicking on a pruduct every time the Subtotal will increase the price (+)
+            total += 710;
+            console.log(total);
+            //display total in Cart Subtotal.
+            document.querySelector("#total").textContent = total;
+        }
+         //when user click on a product shows the subtotal.
+        document.querySelector("#product3").onclick = function () {
+            let total = document.querySelector("#total").textContent;
+            total = parseInt(total);
+            //by clicking on a pruduct every time the Subtotal will increase the price (+)
+            total += 330;
+            console.log(total);
+            //display total in Cart Subtotal.
+            document.querySelector("#total").textContent = total;
+        }
+    </script>
+</body>
+</html>
