@@ -103,7 +103,7 @@ footer {
         font-size: 25px;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
     .row {
        display: inline;
        justify-content: center;
