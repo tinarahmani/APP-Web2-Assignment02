@@ -1,18 +1,20 @@
 body {
-    margin: auto;
+    margin: 0;
 }
 main {
-    height: 680px;
+    width: 100%;
 }
 header {
     text-align: center;
     background-color: blueviolet;
     font-size: 40px;
     padding: 20px;
+    width: 100%;
 }
 .row {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 img {
     width: 250px;
@@ -39,4 +41,125 @@ footer {
     text-align: center;
     background-color: gray;
     color: white;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+       display: inline;
+       justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 600px;
+        height: 600px;  
+        margin: 40px;
+        margin-left: 110px;
+    }
+    .product-name , .price {
+        text-align: center;
+        font-size: 29px;
+        padding-left: 60px;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .total {
+        text-align: end;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .row {
+       display: inline;
+       justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 350px;
+        height: 350px;  
+        margin: 55px;
+        
+    }
+    .product-name , .price {
+        text-align: center;
+        font-size: 25px;
+        padding-left: 60px;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .total {
+        text-align: end;
+        margin-right: 30px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .row {
+       display: inline;
+       justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 350px;
+        height: 350px;  
+        margin: 40px;
+        margin-left: 40px;
+        
+    }
+    .product-name , .price {
+        text-align: center;
+        font-size: 25px;
+        padding-left: 60px;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .total {
+        text-align: end;
+        margin-right: 30px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .row {
+       display: inline;
+       justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 250px;
+        height: 250px;  
+        margin: 40px;
+        margin-left: 60px;
+        
+    }
+    .product-name , .price {
+        text-align: center;
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    .total {
+        text-align: end;
+        margin-right: 30px;
+        font-size: 25px;
+    }
 }
